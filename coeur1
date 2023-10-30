@@ -14,12 +14,6 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        #date {
-            font-size: 2rem;
-            color: white;
         }
 
         #heart {
@@ -31,7 +25,11 @@
 
         #clock {
             font-size: 2rem;
-            color: white;
+            color: white; /* Changer la couleur de la police en blanc */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         @keyframes beat {
@@ -46,16 +44,10 @@
 </head>
 <body>
     <div id="container">
-        <div id="date">
-            <script>
-                const now = new Date();
-                const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                document.write(now.toLocaleDateString('fr-FR', options));
-            </script>
-        </div>
         <div id="heart">❤</div>
         <div id="clock"></div>
     </div>
+
     <script>
         function updateClock() {
             const now = new Date();
