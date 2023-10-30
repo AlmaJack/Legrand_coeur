@@ -17,14 +17,14 @@
         }
 
         #heart {
-            font-size: 9rem;
+            font-size: 8rem;
             color: red;
             display: inline-block;
             animation: beat 1s infinite;
         }
 
         #clock {
-            font-size: 2rem;
+            font-size: 4rem;
             color: white; /* Changer la couleur de la police en blanc */
             position: absolute;
             top: 50%;
